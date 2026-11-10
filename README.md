@@ -91,15 +91,21 @@ Embora o fatiador original da 3DCloner seja suficiente para peças estruturais s
 * **Altura da mesa :** `0.8 mm` 
 
 
-## 🪛 Soluções de Problemas & Gambiarras Técnicas (Troubleshooting)
+## 🪛 Soluções de Problemas & Adaptações
 
-### 1. Substituição dos Anéis de Vedação (*O-Rings*) dos Atuadores
+### 1. Adaptação de Eletrônica: Arduino Nano em Substituição à Sangaboard
+
+* **Problema/Custo:** A placa controladora oficial do projeto OpenFlexure (Sangaboard) possui custo elevado e dificuldade de importação/obtenção local.
+
+* **Solução Técnica Adotada:** Para o modelo motorizado de baixo custo, foi implementada uma adaptação utilizando o Arduino Nano em conjunto com drivers de motor de passo (28BYJ-48). Essa modificação permitiu o controle dos motores de movimentação dos eixos com extremo baixo custo e componentes facilmente encontrados no mercado nacional.
+
+### 2. Substituição dos Anéis de Vedação (*O-Rings*) dos Atuadores
 
 * **Problema:** A documentação oficial do OpenFlexure exige anéis de vedação de **Viton** para exercer a força de retorno elástico nos atuadores do microscópio. Os anéis comuns de borracha sintética comprados no comércio local arrebentaram repetidamente durante os testes de estresse.
 
 * **Solução Técnica Adotada:** Os anéis de borracha foram substituídos pela **base de borracha roletada de preservativos **. O material apresentou a flexibilidade, o diâmetro e a resistência elástica perfeitos para o mecanismo, restaurando com sucesso o movimento dos eixos sem romper.
 
-### 2. Vedação do Módulo Óptico contra Poeira e Mofo
+### 3. Vedação do Módulo Óptico contra Poeira e Mofo
 
 * **Problema:** O acúmulo de poeira e umidade local danificou o sensor exposto da câmera Raspberry Pi v2.
 
@@ -198,6 +204,8 @@ O projeto extrapolou o ambiente de laboratório e promoveu a divulgação cient�
 ## 🔗 Links Úteis & Referências
 
 * [Download Softwares 3DCloner Gen3D v1.01](https://3dcloner.ind.br/arquivos/SetupClonerGen3D_V1.01.rar)
+
+* [Download do Prusa slicer na pagina official](https://www.prusa3d.com/p/prusaslicer/)
 
 * [Documentação Oficial do OpenFlexure (v7.0.0-beta5)](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta5/)
 
