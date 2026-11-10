@@ -34,35 +34,56 @@ Embora o fatiador original da 3DCloner seja suficiente para peças estruturais s
 
 * **Altura da Camada (*Layer height*):** `0.2 mm`
 
-* **Altura da Primeira Camada (*First layer height*):** `0.2 mm` ou `0.25 mm` (para melhor adesão à mesa)
-
-* **Perímetros / Paredes (*Perimeters*):** Mínimo de `3` percursos (garante a resistência mecânica das alavancas flexíveis)
-
-* **Camadas Sólidas (*Solid layers*):** `4` no topo (Top) e `4` na base (Bottom)
+* **Altura da Primeira Camada (*First layer height*):** `0.4 mm` (para melhor adesão à mesa)
 
 #### 2. Preenchimento (*Infill*)
 
 * **Densidade (*Fill density*):** `20%` a `30%`
 
-* **Padrão de Preenchimento (*Fill pattern*):** `Giroide` (*Gyroid*) ou `Grade` (*Grid*) — o padrão Giroide distribui melhor o estresse mecânico no movimento das alavancas.
+* **Padrão de Preenchimento (*Fill pattern*):** `Rectilíneo`
 
 #### 3. Velocidade (*Speed*)
 
-* **Perímetros (*Perimeters*):** `30 - 40 mm/s` (reduza a velocidade para garantir precisão dimensional nas engrenagens)
+* **Perímetros (*Perimeters*):** `60 mm/s`
 
-* **Perímetros Externos (*Small/External perimeters*):** `20 - 25 mm/s`
+* **Perímetros pequenos:** `50 mm/s`
 
-* **Preenchimento (*Infill*):** `45 - 50 mm/s`
+* **Preenchimento :** `50 mm/s`
 
-* **Primeira Camada (*First layer speed*):** `15 - 20 mm/s`
+* **Preenchimento solido :** `50 mm/s`
 
-#### 4. Filamento (*Filament Settings*)
+* **Preenchimento solido de topo :** `50 mm/s`
+
+* **Primeira Camada (*First layer speed*):** `15 mm/s`
+
+#### 4. Aba avançada
+
+* **Relação de  fluxo de ponte:** `0,85`
+
+* **Raio de fechamento de abertura da fatia:** `0,001 mm`
+
+#### 5. Filamento (*Filament Settings*)
+
+* **Densidade :** `1,24 g/cm³`
+
+* **Custo :** `100 R$/Kilo`
+
+* **Peso do carretek :** `1000 g`
 
 * **Temperatura do Bico (*Nozzle Temperature*):**
 
   * *Observação importante:* Para filamentos de **cores mais claras (como o branco)**, a temperatura de extrusão **deve ser mais alta** (ex: `205°C` - `215°C` para PLA) para garantir uma fusão perfeita entre as camadas e evitar delaminação durante a movimentação mecânica.
 
-* **Temperatura da Mesa (*Bed Temperature*):** `60°C` (com aplicação de adesivo/spray de fixação).
+#### 6. Impressora
+
+* **Formato da mesa :** `x:320 y:210 mm`
+
+* **Altura da mesa :** `670 mm` 
+
+#### 7. Retração
+
+* **Altura da mesa :** `0.8 mm` 
+
 
 ## 🪛 Soluções de Problemas & Gambiarras Técnicas (Troubleshooting)
 
@@ -70,13 +91,13 @@ Embora o fatiador original da 3DCloner seja suficiente para peças estruturais s
 
 * **Problema:** A documentação oficial do OpenFlexure exige anéis de vedação de **Viton** para exercer a força de retorno elástico nos atuadores do microscópio. Os anéis comuns de borracha sintética comprados no comércio local arrebentaram repetidamente durante os testes de estresse.
 
-* **Solução Técnica Adoptada:** Os anéis de borracha foram substituídos pela **base de borracha roletada de preservativos (camisinhas)**. O material apresentou a flexibilidade, o diâmetro e a resistência elástica perfeitos para o mecanismo, restaurando com sucesso o movimento dos eixos sem romper.
+* **Solução Técnica Adotada:** Os anéis de borracha foram substituídos pela **base de borracha roletada de preservativos **. O material apresentou a flexibilidade, o diâmetro e a resistência elástica perfeitos para o mecanismo, restaurando com sucesso o movimento dos eixos sem romper.
 
 ### 2. Vedação do Módulo Óptico contra Poeira e Mofo
 
 * **Problema:** O acúmulo de poeira e umidade local danificou o sensor exposto da câmera Raspberry Pi v2.
 
-* **Medida Mitigatória:** Utilização de tampas de proteção e vedação com fita de silicone nas junções das lentes logo após a montagem. Para a versão manual, priorizou-se a **webcam Logitech**, pois possui um sensor plano de fácil acesso e limpeza rápida em comparação com a Pi Camera.
+* **Medida Mitigatória:** Manter o ambiente mais limpo possivel e livre de poeira durante a montagem e amarzenar o microscopio em um ambiente livre de umidade 
 
 ## 💻 Processamento de Imagens: Instalação e Uso do `openflexure-stitch`
 
