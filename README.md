@@ -28,6 +28,9 @@ Caso necessite dos softwares proprietários da impressora (fatiador original e l
 
 ### ⚙️ Configurações Recomendadas no PrusaSlicer
 
+
+* 💾 **Download do Prusa slicer na pagina official:** https://www.prusa3d.com/p/prusaslicer/
+
 Embora o fatiador original da 3DCloner seja suficiente para peças estruturais simples, ele se provou **insuficiente para a precisão exigida pelo corpo principal (`main body`)** do microscópio. Para garantir o alinhamento das engrenagens e a flexibilidade das pontes móveis, é obrigatório utilizar o **PrusaSlicer** com os seguintes parâmetros:
 
 #### 1. Aba Camadas e Perímetros (*Layers and Perimeters*)
