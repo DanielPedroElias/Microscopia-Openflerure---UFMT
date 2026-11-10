@@ -33,6 +33,9 @@ Caso necessite dos softwares proprietários da impressora (fatiador original e l
 
 Embora o fatiador original da 3DCloner seja suficiente para peças estruturais simples, ele se provou **insuficiente para a precisão exigida pelo corpo principal (`main body`)** do microscópio. Para garantir o alinhamento das engrenagens e a flexibilidade das pontes móveis, é obrigatório utilizar o **PrusaSlicer** com os seguintes parâmetros:
 
+## (IMPORTANTE)
+* A impressora 3d Cloner não suporta imprimir diversas perças de uma vez entao arquivos de mais de uma peça foram separados pra terem somente uma peça
+
 #### 1. Aba Camadas e Perímetros (*Layers and Perimeters*)
 
 * **Altura da Camada (*Layer height*):** `0.2 mm`
